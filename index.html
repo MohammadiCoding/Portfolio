@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Full Stack Web Developer and Designer, specializing in dynamic, user-centric websites. Expertise in both front-end and back-end development with experience in various technologies.">
+    <meta name="keywords" content="Full Stack Web Developer, Frontend Developer, Backend Developer, Web Design, JavaScript, React, Node.js, HTML, CSS">
+    <!-- Use cache headers for static assets -->
+<meta http-equiv="Cache-Control" content="max-age=31536000, public">
+
+    <meta name="author" content="Mohammad Mohammadi">
+    <title>Mohammad Mohammadi - Full Stack Web Developer & Designer</title>
+
+    <!-- Open Graph for Social Media Sharing -->
+    <meta property="og:title" content="Mohammad Mohammadi - Full Stack Web Developer & Designer">
+    <meta property="og:description" content="Full Stack Web Developer and Designer, specializing in dynamic, user-centric websites.">
+    <meta property="og:image" content="path-to-your-image.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+   .section {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s, transform 1s;
+            margin: 50px 0;
+            padding: 50px;
+            background-color: #f0f0f0;
+        }
+
+        /* Visible class for triggering the animation */
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h1 class="gradient-text" style="color: black; display: flex;">Noori <p style="text-transform: lowercase;">s</p></h1> 
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ml-auto" style="color: black;">
+                    <li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#main-about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul> 
+            </div>
+        </div>
+    </nav>
+<!-- ------------------------------------------------------------------------- -->
+
+<header id="home" class="header section" style="padding-top: 90px; padding-bottom: 100px; height: 102vh; background-color: #e0f7fa;">
+  <div class="container d-flex align-items-center">
+      <div class="header-text">
+          <h1 class="header-title">
+              Web Design,<br>
+              Web Development and<br>
+              Graphic Design<br>
+              <span class="header-highlight">Services Globally</span>
+          </h1>
+          <h5 class="header-subtitle">
+              Empower your business online with our professional team of web designers, web developers, and graphic designers.
+          </h5>
+          <a href="#team" class="header-button">View More</a>
+      </div>
+      <div class="header-image">
+          <img src="illustration-1.webp" alt="Design Illustration" class="header-img">
+      </div>
+  </div>
+
+   
+</header>
+
+
+
+
+<!-- ============================================================================================================================== -->
+<section id="main-about" class="main-about section" style="width: 100%; background-color: #e0f7fa;">
+  <div class="main-section">
+    <!-- Eye-Catching Header -->
+    <h1 class="animate-text" style="font-weight: bolder;">Take your business to the next level with us</h1>
+    <div class="main-cards main-wrapper">
+      
+      <!-- Web Design and Development Card (Right Side) -->
+      <div class="main-card">
+        <div class="main-body">
+          <i class="fas fa-laptop service-icon"></i>
+          <h3>Web Design and Development</h3>
+          <p>
+            Build modern, responsive websites that combine attractive design with seamless functionality to drive business success.
+          </p>
+        </div>
+      </div>
+      <!-- Graphic Design Card (Left Side) -->
+      <div class="main-card" style="border: solid 2px #fe6786; margin-top: 50px;">
+        <div class="main-body">
+          <i class="fas fa-paint-brush service-icon"></i>
+          <h3>Graphic Design</h3>
+          <p>
+            Elevate your brand with stunning visuals, creative designs, and impactful graphics tailored to your business needs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    
+    
+<!-- ------------------------------------------------------------------------------ ---------------------------------------------->
+    
+    
+ <!-- Services Section -->
+ <section id="services" class="services section" style="padding-bottom: 100px;padding-top: 100px; background-color: #e0f7fa;">
+  <div class="container" style="text-align: center;">
+    <h2 class="services-header" style="color: black;">Our Services</h2> 
+    <div class="services-wrapper">
+      <!-- Service 1 -->
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <h3>Web Design</h3>
+        <p>Creating beautiful, responsive websites that enhance user experience and engagement</p>
+      </div>
+      <!-- Service 2 -->
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <h3>Web Development</h3>
+        <p>Professional and responsive websites crafted to perfection.</p>
+      </div>
+      <!-- Service 3 -->
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-server"></i>
+        </div>
+        <h3>Website Hosting</h3>
+        <p>Fast, secure, and reliable website hosting for seamless online performance</p>
+      </div>
+      <!-- Service 4 -->
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <h3>SEO <p>(Search engine optimization)</p></h3>
+        <p>Optimize your website to reach more customers effectively.</p>
+      </div>
+      <!-- Service 5 -->
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-paint-brush"></i>
+        </div>
+        <h3>Graphic Design</h3>
+        <p>Creative designs to bring your brand’s vision to life.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!---------------------------------------------------------------------------------------------------------  -->
+<!-- Skills Section -->
+<section id="skills" class="skills section" style="padding-bottom: 100px; margin-top: 50px; padding-top: 100px; background-color: #e0f7fa;">
+  <div class="skills-section">
+      <!-- Eye-Catching Header -->
+      <h2 class="skills-header">
+          <span class="skill-letter">O</span>
+          <span class="skill-letter">u</span>
+          <span class="skill-letter">r</span>
+          <span class="skill-letter">&nbsp;</span>
+          <span class="skill-letter">S</span>
+          <span class="skill-letter">k</span>
+          <span class="skill-letter">i</span>
+          <span class="skill-letter">l</span>
+          <span class="skill-letter">l</span>
+          <span class="skill-letter">s</span>
+      </h2>
+      <div class="skills-cards row justify-content-center">
+          <!-- First Row -->
+          <div class="col-md-5 mb-4">
+              <div class="card skill-card">
+                  <div class="card-body text-center">
+                      <i class="fas fa-laptop-code skill-icon"></i>
+                      <h5 class="card-title" style=" text-transform: capitalize;">Fullstack Developer</h5>
+                      <p class="card-text">
+                          Skilled in both front-end and back-end development, capable of handling the entire web development stack.
+                      </p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-5 mb-4">
+              <div class="card skill-card">
+                  <div class="card-body text-center">
+                      <i class="fas fa-code skill-icon"></i>
+                      <h5 class="card-title" style=" text-transform: capitalize;">Frontend Developer</h5>
+                      <p class="card-text">
+                          specialized in creating dynamic, user-friendly interfaces using HTML, CSS, JavaScript, and frameworks like React.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="skills-cards row justify-content-center">
+          <!-- Second Row -->
+          <div class="col-md-5 mb-4">
+              <div class="card skill-card">
+                  <div class="card-body text-center">
+                      <i class="fas fa-database skill-icon"></i>
+                      <h5 class="card-title"  style=" text-transform: capitalize;">Backend Developer</h5>
+                      <p class="card-text">
+                          Experienced in server-side development using technologies like Node.js, PHP, and databases like MySQL and MongoDB.
+                      </p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-5 mb-4">
+              <div class="card skill-card">
+                  <div class="card-body text-center">
+                      <i class="fas fa-paint-brush skill-icon"></i>
+                      <h5 class="card-title" style="text-transform: capitalize;">Graphic Designer</h5>
+                      <p class="card-text">
+                          Proficient in creating visually appealing designs using tools like Adobe Photoshop, Illustrator, and Canva.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+<!-- -------------------------------------------------------------------------------------------------- -->
+
+
+    
+
+<section id="portfolio" class="portfolio py-5 section" style="background-color: #e0f7fa;">
+    <div class="container">
+      <h2 class="text-center mb-5" style="text-transform: capitalize;">Our Portfolio</h2>
+      <div class="row g-5">
+        <div class="col-md-4">
+          <div class="card shadow-custom rounded-lg overflow-hidden">
+            <div class="card-body">
+              <h5 class="card-title">Project 1</h5>
+              <p class="card-text">This is an incredible project that integrates sleek design with powerful functionality. It's designed with user experience in mind.</p>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-custom rounded-lg overflow-hidden">
+            <div class="card-body">
+              <h5 class="card-title">Project 2</h5>
+              <p class="card-text">A perfect example of modern design paired with cutting-edge technology. This project is fully responsive and elegant in every way.</p>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-custom rounded-lg overflow-hidden">
+            <div class="card-body">
+              <h5 class="card-title">Project 3</h5>
+              <p class="card-text">This project highlights innovative solutions to common problems. Clean code and a modern design approach make it stand out.</p>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  
+  
+
+<!-- =========================================================================================================================== -->
+<!-- Team Section -->
+<section id="team" class="team section">
+  <div class="container text-center" style="justify-content: center;">
+    <!-- Animated Section Title -->
+    <h1 class="section-title" style="color: black; font-size: 70px; font-weight: bold;">Our Team</h1>
+    <div class="row justify-content-center">
+      <!-- Team Member 1 -->
+      <div class="col-md-5 mb-4 text-center team-card">
+        <img src="Mohammad.jpeg" alt="Mohammad Noori" class="profile-img mb-3">
+        <h5 class="member-name">Mohammad Noori</h5>
+        <p class="member-description">Full Stack Web Developer with expertise in building user-friendly, dynamic websites.</p>
+        <a href="Mohammad.html" class="btn btn-view-more">View More</a>
+      </div>
+      <!-- Team Member 2 -->
+      <div class="col-md-5 mb-4 text-center team-card">
+        <img src="Mustafa.JPG" alt="Mustafa Noori" class="profile-img mb-3">
+        <h5 class="member-name">Mustafa Noori</h5>
+        <p class="member-description">Creative Graphic Designer specialized in branding, UI/UX design, and visual storytelling.</p>
+        <a href="Mustafa.html" class="btn btn-view-more">View More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ========================================================================================================================== -->
+<!-- testimonials section -->
+<section id="testimonials" class="testimonials-section">
+  <div class="container" style="justify-content: center;">
+    <h1 class="t-title">What Our Clients Say</h1>
+    <div class="row justify-content-center">
+      <!-- Testimonial 1 -->
+      <div class="col-md-4 testimonial-card">
+        <div class="t-card">
+          <div class="t-card-body">
+            <p class="testimonial-text">
+              "Web Design & Development exceeded my expectations! Their creativity and attention to detail are unmatched."
+            </p>
+            <h5 class="client-name">John Doe</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Testimonial 2 -->
+      <div class="col-md-4 testimonial-card">
+        <div class="t-card">
+          <div class="t-card-body">
+            <p class="testimonial-text">
+              "Fantastic experience working with their team. My website is now fast, responsive, and beautiful!"
+            </p>
+            <h5 class="client-name">Jane Smith</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Testimonial 3 -->
+      <div class="col-md-4 testimonial-card">
+        <div class="t-card">
+          <div class="t-card-body">
+            <p class="testimonial-text">
+              "Their expertise in web development and design is truly impressive. Highly recommended!"
+            </p>
+            <h5 class="client-name">Mike Johnson</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+  
+   
+  
+<!-- ---------------------------------------------------------------------------------------------------------------- -->
+<section id="contact" class="contact section" style="background-color: #e0f7fa; padding-bottom: 100px; padding-top: 100px; width: 100%;">
+  <div class="">
+    <h2 class="contact-heading" style="font-size: 3rem; font-weight: bold; color: black; margin-bottom: 10px; display: inline-block; text-align: center; width: 100%; text-transform: uppercase;">Contact Us</h2>
+    <div class="row justify-content-center">
+      <!-- Contact Form -->
+      <div class="col-lg-6 col-md-8 d-flex justify-content-center contact-form-container">
+        <div class="contact-form p-5 rounded-lg shadow-lg" style="background: #ffffff; border: 1px solid #e0e4e8; width: 100%; max-width: 800px;">
+          <h4 class="text-dark mb-4" style="font-size: 1.6rem; font-weight: bold; text-align: center;">Get in Touch</h4>
+          <form action="send-message.php" method="POST">
+            <div class="form-group mb-4">
+              <input type="text" class="form-control border-0 rounded-lg shadow-sm" id="name" name="name" placeholder="Your Name" required style="background: #f7f8fb; height: 50px; font-size: 1.1rem; width: 100%;">
+            </div>
+            <div class="form-group mb-4">
+              <input type="email" class="form-control border-0 rounded-lg shadow-sm" id="email" name="email" placeholder="Your Email" required style="background: #f7f8fb; height: 50px; font-size: 1.1rem; width: 100%;">
+            </div>
+            <div class="form-group mb-4">
+              <textarea class="form-control border-0 rounded-lg shadow-sm" id="message" name="message" rows="6" placeholder="Your Message" required style="background: #f7f8fb; font-size: 1.1rem; width: 100%;"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3 w-100 rounded-lg shadow-md" style="font-size: 1.1rem; padding: 12px 20px;">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="col-lg-6 col-md-8 d-flex justify-content-center contact-info-container">
+        <div class="contact-info p-5 rounded-lg shadow-lg" style="background: #fff; border: 1px solid #d1d8e2; width: 100%; max-width: 100%;">
+          <h4 class="text-dark mb-4" style="font-size: 1.4rem; font-weight: bold; text-align: center;">Contact Information</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><i class="fas fa-envelope text-primary" style="font-size: 1.2rem;"></i> <span class="text-dark" style="font-weight: 500;">mn385359@gmail.com</span></li>
+            <li class="mb-3"><i class="fas fa-phone text-primary" style="font-size: 1.2rem;"></i> <span class="text-dark" style="font-weight: 500;">+93 791559254</span></li>
+            <li class="mb-3"><i class="fab fa-linkedin text-primary" style="font-size: 1.2rem;"></i> <a href="#" class="text-dark text-decoration-none" style="font-weight: 500;">LinkedIn</a></li>
+            <li class="mb-3"><i class="fab fa-github text-primary" style="font-size: 1.2rem;"></i> <a href="#" class="text-dark text-decoration-none" style="font-weight: 500;">GitHub</a></li>
+            <li class="mb-3"><i class="fab fa-facebook text-primary" style="font-size: 1.2rem;"></i> <a href="https://www.facebook.com/profile.php?id=61570252320590&mibextid=LQQJ4d&mibextid=LQQJ4d" class="text-dark text-decoration-none" style="font-weight: 500;">Facebook</a></li>
+            <li class="mb-3"><i class="fab fa-whatsapp text-primary" style="font-size: 1.2rem;"></i> 
+                <a href="https://wa.me/93791559254" class="text-dark text-decoration-none" target="_blank" style="font-weight: 500;">WhatsApp</a>
+            </li>
+            <li><i class="fab fa-instagram text-primary" style="font-size: 1.2rem;"></i> <a href="#" class="text-dark text-decoration-none" style="font-weight: 500;">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+</div>
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+    
+
+<footer id="footer" class="footer dark-background">
+
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-5 col-md-12 footer-about">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <span class="sitename " style="text-transform: uppercase; display: flex;">Noori <p style="text-transform: lowercase; font-size: 25px;">s</p></span>
+        </a>
+        <p>Welcome to Nooris, where innovation meets excellence. We are a passionate team dedicated to providing cutting-edge digital solutions, helping businesses grow and thrive in an ever-evolving online landscape. From custom web design to powerful SEO strategies, our services are tailored to meet your unique needs.</p>
+        <div class="social-links d-flex mt-4">
+          <a href=""><i class="bi bi-twitter-x"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Testimonial</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">Website Hosting</a></li>
+          <li><a href="#">SEO</a></li>
+          <li><a href="#">Graphic Design</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4>Contact Us</h4>
+        <p class="mt-4"><strong>Phone:</strong> <span>+93 791559254</span></p>
+        <p><strong>Email:</strong> <span>info@example.com</span></p>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+
+
+
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Person",
+          "name": "Mohammad Mohammadi",
+          "jobTitle": "Full Stack Web Developer",
+          "url": "http://www.yourwebsite.com",
+          "sameAs": [
+            "https://www.linkedin.com/in/yourprofile",
+            "https://github.com/yourprofile",
+            "https://www.instagram.com/yourprofile"
+          ]
+        }
+        </script>
+        <script>
+            // JavaScript for visibility on scroll
+document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll('.section');
+
+    function checkVisibility() {
+        sections.forEach(function(section) {
+            const rect = section.getBoundingClientRect();
+            if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+                section.classList.add('visible');
+            } else {
+                section.classList.remove('visible');
+            }
+        });
+    }
+
+    // Check visibility on page load and on scroll
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility();  // Initial check to add visible class on page load
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll('.contact-form-container, .contact-info-container');
+    const options = {
+        threshold: 0.5
+    };
+
+    const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+            }
+        });
+    }, options);
+
+    elements.forEach(element => {
+        observer.observe(element);
+    });
+});
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const serviceCards = document.querySelectorAll('.service-card');
+
+    // Observer options (trigger when 50% of the element is visible)
+    const observerOptions = {
+      root: null, // Use the viewport as the root
+      rootMargin: '0px', // No margin
+      threshold: 0.5, // 50% visibility
+    };
+
+    // Create an intersection observer to observe the service cards
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Add the 'animate' class when the card is in view
+          entry.target.classList.add('animate');
+          entry.target.classList.remove('exit'); // Remove exit class when visible
+        } else {
+          // Add the 'exit' class when the card is out of view
+          entry.target.classList.add('exit');
+          entry.target.classList.remove('animate'); // Remove 'animate' class to reverse the animation
+        }
+      });
+    }, observerOptions);
+
+    // Observe each service card
+    serviceCards.forEach(card => {
+      observer.observe(card);
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const portfolioCards = document.querySelectorAll('.card');
+
+    // Observer options (trigger when 50% of the element is visible)
+    const observerOptions = {
+      root: null, // Use the viewport as the root
+      rootMargin: '0px', // No margin
+      threshold: 0.5, // 50% visibility
+    };
+
+    // Create an intersection observer to observe the portfolio cards
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Add the 'animate' class when the card is in view
+          entry.target.classList.add('animate');
+          entry.target.classList.remove('exit'); // Remove exit class when visible
+        } else {
+          // Add the 'exit' class when the card is out of view
+          entry.target.classList.add('exit');
+          entry.target.classList.remove('animate'); // Remove 'animate' class to reverse the animation
+        }
+      });
+    }, observerOptions);
+
+    // Observe each portfolio card
+    portfolioCards.forEach(card => {
+      observer.observe(card);
+    });
+  });
+
+
+//   text for the portfolio
+document.addEventListener('DOMContentLoaded', function () {
+  const portfolioTitleParts = document.querySelectorAll('.portfolio-title-part');
+  const portfolioCards = document.querySelectorAll('.card');
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.5,
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+      } else {
+        entry.target.classList.remove('animate');
+      }
+    });
+  }, observerOptions);
+
+  portfolioTitleParts.forEach(part => {
+    observer.observe(part);
+  });
+
+  portfolioCards.forEach(card => {
+    observer.observe(card);
+  });
+});
+
+
+// skills section
+// Function to animate the skills header letters
+document.addEventListener("DOMContentLoaded", () => {
+  const skillsHeader = document.querySelector('.skills-header');
+  const text = skillsHeader.textContent.trim();
+  const letters = text.split('');
+  skillsHeader.innerHTML = '';
+  
+  letters.forEach(letter => {
+    const span = document.createElement('span');
+    span.classList.add('skill-letter');
+    span.textContent = letter;
+    skillsHeader.appendChild(span);
+  });
+});
+
+// Function to animate skill cards when they appear on the screen
+window.addEventListener('scroll', () => {
+  const skillCards = document.querySelectorAll('.service-card');
+  
+  skillCards.forEach(card => {
+    const rect = card.getBoundingClientRect();
+    if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+      card.classList.add('animate-card');
+    } else {
+      card.classList.remove('animate-card');
+    }
+  });
+});
+
+// Trigger initial scroll event to animate cards immediately if they are already visible
+window.dispatchEvent(new Event('scroll'));
+
+
+// animtion text for skills
+// Intersection Observer to trigger animation on scroll
+document.addEventListener("DOMContentLoaded", function() {
+    const skillsHeader = document.querySelector('.skills-header');
+
+    // Options for the intersection observer
+    const options = {
+        root: null, // Relative to the viewport
+        threshold: 0.5 // Trigger when 50% of the element is in the viewport
+    };
+
+    // Callback function when the element is in view
+    const observerCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Add the class to trigger the animation
+                entry.target.classList.add('animate');
+                observer.unobserve(entry.target); // Stop observing after animation
+            }
+        });
+    };
+
+    // Create an observer instance
+    const observer = new IntersectionObserver(observerCallback, options);
+
+    // Observe the "MY SKILLS" header
+    observer.observe(skillsHeader);
+});
+
+// animation for the main about cards
+// Function to animate the main cards when they appear on the screen
+document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".main-card");
+
+    // Function to handle the animation of cards based on their visibility
+    const handleCardAnimation = () => {
+        cards.forEach(card => {
+            const rect = card.getBoundingClientRect();
+            if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+                card.classList.add("animate"); // Add animation class when card is in view
+            } else {
+                card.classList.remove("animate"); // Remove animation class when card is out of view
+            }
+        });
+    };
+
+    // Initial check for cards on page load
+    handleCardAnimation();
+
+    // Listen for scroll events to trigger animations
+    window.addEventListener('scroll', handleCardAnimation);
+});
+
+// text
+// Function to animate the text letters individually
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector('.animate-text');
+  const text = header.textContent.trim();
+  const words = text.split(' '); // Split text into words
+  
+  header.innerHTML = ''; // Clear the header content
+
+  words.forEach((word) => {
+    const wordSpan = document.createElement('span');
+    wordSpan.classList.add('word'); // Add class for word container
+    
+    // Split each word into individual letters and wrap each in a span
+    word.split('').forEach((letter, index) => {
+      const letterSpan = document.createElement('span');
+      letterSpan.classList.add('letter');
+      letterSpan.textContent = letter;
+      wordSpan.appendChild(letterSpan);
+    });
+    
+    // Add a space between words
+    header.appendChild(wordSpan);
+    header.appendChild(document.createTextNode(' ')); // Add space between words
+  });
+});
+
+// Scroll event to trigger animation when text enters the viewport
+window.addEventListener('scroll', () => {
+  const letters = document.querySelectorAll('.animate-text .letter');
+  
+  letters.forEach((letter, index) => {
+    const rect = letter.getBoundingClientRect();
+    if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+      letter.classList.add('animate'); // Add animation class when letter is in view
+    } else {
+      letter.classList.remove('animate'); // Remove animation class when letter is out of view
+    }
+  });
+});
+
+// Trigger initial scroll event to animate letters immediately if they are already visible
+window.dispatchEvent(new Event('scroll'));
+
+
+// team
+document.addEventListener("DOMContentLoaded", () => {
+  const teamCards = document.querySelectorAll(".team-card");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate");
+        } else {
+          entry.target.classList.remove("animate"); // Remove animation class when out of view
+        }
+      });
+    },
+    { threshold: 0.1 } // Adjust this value to control when the animation triggers
+  );
+
+  teamCards.forEach((card) => observer.observe(card));
+});
+
+// team title
+document.addEventListener("DOMContentLoaded", () => {
+  const teamCards = document.querySelectorAll(".team-card");
+  const sectionTitle = document.querySelector(".section-title");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate");
+        } else {
+          entry.target.classList.remove("animate");
+        }
+      });
+    },
+    { threshold: 0.1 } // Adjust this value to control when animations trigger
+  );
+
+  // Observe team cards
+  teamCards.forEach((card) => observer.observe(card));
+  
+  // Observe section title
+  observer.observe(sectionTitle);
+});
+
+//  testimonials
+// Create an IntersectionObserver to observe when the testimonials section is in view
+const testimonials = document.querySelectorAll('.testimonial-card');
+
+// IntersectionObserver to trigger animations every time the testimonial enters the viewport
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate'); // Add the animation class when in view
+    } else {
+      entry.target.classList.remove('animate'); // Optionally remove animation class when out of view
+    }
+  });
+}, {
+  threshold: 0.5 // Trigger animation when 50% of the element is visible
+});
+
+// Observe each testimonial card
+testimonials.forEach(testimonial => {
+  observer.observe(testimonial);
+});
+
+
+
+
+
+   </script>
+
+        
+            
+            
+
+        
+        
+</body>
+</html>
